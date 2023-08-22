@@ -6,7 +6,11 @@ services:
       - "8888:8888"
     volumes:
       - ./GettingStarted.ipynb:/home/jovyan/GettingStarted.ipynb
+      - ./object_detection_with_model_zoo.ipynb:/home/jovyan/object_detection_with_model_zoo.ipynb
+      - ./djl_word_embeddings.ipynb:/home/jovyan/djl_word_embeddings.ipynb
+      - ./load_pytorch_model.ipynb:/home/jovyan/load_pytorch_model.ipynb
+      - ./paddle_ocr_java.ipynb:/home/jovyan/paddle_ocr_java.ipynb
   vecsim:
-    image: redislabs/redisearch:2.4.3
+    image: redis/redis-stack:edge
     ports:
       - "6379:6379"
